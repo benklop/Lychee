@@ -2,7 +2,7 @@
 # ------------------------------------------------------------
 
 CREATE TABLE IF NOT EXISTS `?` (
-  `id` bigint(14) unsigned NOT NULL,
+  `id` bigint(14) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(100) NOT NULL DEFAULT '',
   `description` varchar(1000) DEFAULT '',
   `sysstamp` int(11) NOT NULL,

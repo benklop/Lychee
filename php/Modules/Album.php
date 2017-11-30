@@ -218,7 +218,6 @@ final class Album {
 			default:
 				$photos   = Database::prepare(Database::get(), "SELECT title, url FROM ? WHERE album = '?'", array(LYCHEE_TABLE_PHOTOS, $this->albumIDs));
 				$zipTitle = 'Unsorted';
-		}
 
 				// Get title from database when album is not a SmartAlbum
 				if ($this->albumIDs!=0 && is_numeric($this->albumIDs)) {
